@@ -14,7 +14,8 @@ class AppConfig(BaseSettings):
 
 
 class App:
-    name = "Mini Botspot Template"
+    name = "Simple Inbox Bot"
 
     def __init__(self, **kwargs):
         self.config = AppConfig(**kwargs)
+        print(self.config.telegram_bot_token.get_secret_value())

@@ -1,0 +1,4 @@
+- [ ] make a default list of friends and admins and add them to ...
+  - [ ] would be easier once I have people-bot
+- [ ] in 'np' and 'nmp' commands copy default ... .env file for botspot / general - with pre-filled settings
+- [ ] look at people component made by Kirill
