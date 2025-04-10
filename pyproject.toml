@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "project-name"
+name = "simple-inbox-bot"
 version = "0.1.0"
 description = ""
 authors = ["Petr Lavrov <calmmage@gmail.com>"]
@@ -100,6 +100,10 @@ isort = "^6.0.0"
 vulture = "^2.14"
 pytest-cov = "^6.0.0"
 pyupgrade = "^3.19.1"
+pytest-asyncio = "^0.26.0"
+pytest-mock = "^3.14.0"
+pyright = "^1.1.399"
+ruff = "^0.11.5"
 
 [tool.poetry.group.docs.dependencies]
 #mkdocs = ">=1.6"
@@ -129,3 +133,29 @@ version = "0.3.0"
 url = "https://github.com/calmmage/botspot-template.git"
 author = "Petr Lavrov <me@petrlavrov.com>"
 description = "A template for creating a bot using botspot"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 100
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+skip = [".git", "venv", ".env", "__pycache__"]
+# known_first_party = ["your_package_name"]  # Replace with your package name
+# known_third_party = [
+#     "aiogram",
+#     "fastapi",
+#     "pydantic",
+#     "pytest",
+#     "tqdm",
+#     "loguru"
+# ]
+# sections = [
+#     "FUTURE",
+#     "STDLIB",
+#     "THIRDPARTY",
+#     "FIRSTPARTY",
+#     "LOCALFOLDER"
+# ]
